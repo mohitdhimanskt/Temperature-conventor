@@ -7,13 +7,13 @@
     </head>
     <body>
   <div id ="celcius">
-   <input type="number" placeholder="calcius...">
+   <input id ="inputCelcius" onInput="celciusToFahrenheitAndKelvin()" type="number" placeholder="calcius...">
   </div>
   <div id ="fahrenheit">
-      <input type="number" placeholder="fahrenheit...">
+      <input id ="inputFahrenheit" onInput="fahrenheitToCelciusAndKelvin()" type="number" placeholder="fahrenheit...">
 </div>
 <div id ="kelvin">
-      <input type="number" placeholder="kelvin..."> 
+      <input id ="inputKelvin" onInput="kelvinToCelciusAndFahrenheit()" type="number" placeholder="kelvin..."> 
 </div>
 <script src="index.js" charset="utf-8"></script>
     </body>

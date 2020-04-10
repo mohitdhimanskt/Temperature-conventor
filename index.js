@@ -1,6 +1,7 @@
-const celciusInput = document.querySelector("#celcius > input");
-const fahrenheitInput = document.querySelector("#fahrenheit > input");
-const kelvinInput = document.querySelector("#kelvin > input");
+let celciusInput = document.getElementById("inputCelcius");
+let fahrenheitInput = document.getElementById("inputFahrenheit");
+let kelvinInput = document.getElementById("inputKelvin");
+
  function roundNum(num) {
      return Math.round(num*100)/100;
  }
@@ -25,9 +26,4 @@ function  kelvinToCelciusAndFahrenheit(){
     celciusInput.value =roundNum(cTemp);
     fahrenheitInput.value =roundNum(kTemp);
 } 
-function main(){
-celciusInput.addEventListener("input",celciusToFahrenheitAndKelvin);
-fahrenheitInput.addEventListener("input", fahrenheitToCelciusAndKelvin);
-kelvinInput.addEventListener("input",kelvinToCelciusAndFahrenheit);
-}
-main();
+
